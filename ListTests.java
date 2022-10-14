@@ -5,13 +5,13 @@ import java.util.List;
 import org.junit.*;
 
 public class ListTests {
-    // @Test
-    // public void testFilter(){
-    //     List<String> input = List.of("irony", "smile");
-    //     StringChecker checker = new NewChecker();
+    @Test
+    public void testFilter(){
+        List<String> input = List.of("irony", "smile");
+        StringChecker checker = new NewChecker();
 
-    //     assertArrayEquals(input.toArray(), ListExamples.filter(input, checker).toArray());
-    // }    
+        assertArrayEquals(input.toArray(), ListExamples.filter(input, checker).toArray());
+    }    
 
     @Test
     public void testMerge(){
